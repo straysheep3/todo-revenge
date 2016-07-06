@@ -67,6 +67,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
+    font-awesome-rails (4.6.3.1)
+      railties (>= 3.2, < 5.1)
     git-version-bump (0.15.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -160,6 +162,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     slop (3.6.0)
     spring (1.7.2)
     sprockets (3.6.3)
@@ -198,6 +203,7 @@ DEPENDENCIES
   bootswatch-rails (~> 3.3, >= 3.3.5)
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-rails (~> 4.6, >= 4.6.3.1)
   hirb
   hirb-unicode
   jbuilder (~> 2.0)
@@ -209,6 +215,7 @@ DEPENDENCIES
   rails-erd (~> 1.4, >= 1.4.7)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form (~> 3.2, >= 3.2.1)
   spring
   sqlite3
   turbolinks

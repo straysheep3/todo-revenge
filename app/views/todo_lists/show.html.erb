@@ -1,0 +1,22 @@
+<div class="col-md-4">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title text-center">
+        <%= @todo_list.title %>
+      </h3>
+    </div>
+    <div class="panel-body">
+      <%= @todo_list.description %>
+    </div>
+    <div class="panel-footer">
+      <div class="btn-group btn-group-justified">
+        <%= link_to edit_todo_list_path, class: "btn btn-warning" do %>
+          <i class="fa fa-pencil-square fa-2x"></i>
+        <% end %>
+        <%= link_to todo_list_path, class: "btn btn-danger", method: :delete, data: { confirm: "よろしいですか？" } do %>
+          <i class="fa fa-trash fa-2x"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="col-md-4">
+  <%= simple_form_for @todo_list do |f| %>
+    <%= f.input :title, error: "入力は必須です", class: "form-control" %>
+    <%= f.input :description, class: "form-control" %>
+    <%= f.button "submit", class: "btn btn-success" %>
+  <% end %>
+</div>
