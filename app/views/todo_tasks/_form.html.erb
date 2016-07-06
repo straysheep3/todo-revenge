@@ -1,0 +1,4 @@
+<%= simple_form_for [@todo_list, @todo_list.todo_tasks.build] do |f| %>
+  <%= f.input :task, class: "form-control" %>
+  <%= f.button "submit", class: "btn btn-success btn-block" %>
+<% end %>

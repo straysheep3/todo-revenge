@@ -1,0 +1,19 @@
+<div class="row">
+  <% @todo_lists.each do |todo_list| %>
+    <div class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <%= todo_list.title %>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <%= todo_list.description %>
+        </div>
+        <div class="panel-footer">
+          <%= link_to "Todoを見る", todo_list, class: "btn btn-block btn-primary" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

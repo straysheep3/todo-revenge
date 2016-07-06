@@ -1,6 +1,6 @@
 class TodoListsController < ApplicationController
   def index
-    #code
+    @todo_lists = TodoList.all.order("created_at desc")
   end
 
   def show
