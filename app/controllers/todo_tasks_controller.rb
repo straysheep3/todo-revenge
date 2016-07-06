@@ -8,6 +8,16 @@ class TodoTasksController < ApplicationController
     end
   end
 
+  def complete
+    #code
+  end
+
+  def destroy
+    @todo_task = TodoTask.find(params[:id])
+    @todo_task.destroy
+    redirect_to @todo_list
+  end
+
   private
     def todo_task_params
       params.require(:todo_task).permit(:task)

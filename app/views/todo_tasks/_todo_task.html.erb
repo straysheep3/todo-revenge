@@ -1,3 +1,6 @@
 <div class="well well-sm">
-  <%= todo_task.task %>  
+  <%= todo_task.task %>
+  <%= link_to todo_list_todo_task_path(@todo_list, todo_task.id), method: :delete, data: { confirm: "よろしい？" }  do %>
+    <i class="fa fa-trash"></i>
+  <% end %>
 </div>
